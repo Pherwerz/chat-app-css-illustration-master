@@ -1,0 +1,46 @@
+.messages {
+  padding: 1rem;
+  font-size: 1rem;
+  display: inline-block;
+  max-width: 80%;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+
+  &Sent {
+    color: var(--desaturated-dark-violet);
+    background-color: var(--white);
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  &Recieve {
+    color: var(--moderate-violet);
+    background-color: hsl(276, 100%, 91%);
+    border-bottom-left-radius: 0.5rem;
+    align-self: flex-start;
+  }
+
+  &Radio {
+    color: var(--light-grayish-violet);
+    background-image: var(--gradient);
+    border-bottom-left-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+
+    & span {
+      height: 1.5rem;
+      width: 1.5rem;
+      border: 2px solid var(--very-light-magenta);
+      margin-right: 1rem;
+      border-radius: 0.4rem;
+    }
+
+    & h3 {
+      margin-left: 2rem;
+      color: var(--white);
+    }
+  }
+}

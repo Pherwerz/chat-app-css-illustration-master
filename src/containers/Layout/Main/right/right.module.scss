@@ -1,0 +1,49 @@
+@import '../../../../variables';
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  @include respond(phone) {
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  & h1 {
+    margin-bottom: 2rem;
+    color: var(--very-dark-desaturated-violet);
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  & p {
+    width: 62%;
+    color: var(--dark-grayish-violet);
+    font-weight: 500;
+
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+
+  &Bg {
+    position: absolute;
+    bottom: 0;
+    right: -12%;
+    height: 85%;
+    width: 60%;
+    border-top-left-radius: 30rem;
+    border-top-right-radius: 30rem;
+    z-index: -1;
+    background-color: var(--light-grayish-violet);
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+}

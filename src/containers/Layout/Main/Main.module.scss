@@ -1,0 +1,11 @@
+@import '../../../variables';
+
+.Main {
+  height: 100vh;
+  display: flex;
+
+  @include respond(phone) {
+    flex-flow: column;
+    height: auto;
+  }
+}
